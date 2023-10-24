@@ -1,0 +1,7 @@
+export QT_QPA_FB_DRM=1
+
+export QT_QPA_PLATFORM=linuxfb:size=1280x800:mmSize=1280x800
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/lib/qt/lib
+export QT_QPA_PLATFORM_PLUGIN_PATH=/usr/lib/qt/plugins
+export QT_PLUGIN_PATH=/usr/lib/qt/plugins
+export QT_QPA_FONTDIR=/usr/lib/qt/fonts

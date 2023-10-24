@@ -1,0 +1,18 @@
+mount -a
+mkdir /dev/pts
+mount -t devpts devpts /dev/pts
+/sbin/udevd --daemon
+#echo /sbin/mdev > /proc/sys/kernel/hotplug
+#mdev -s
+
+/etc/init.d/S10-driverprobe.sh &
+
+#/app/test_lvds_camera_0.sh &
+
+ifconfig eth0 192.168.110.242
+
+/usr/sbin/sshd &
+
+echo "Camera will work.."
+/home/root/display_cam.sh &
+
